@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="modal">
+    <div class="bg-modal"></div>
+    <div class="order-accepted active">
+      <span>Order accepted</span>
+      <button class="close-btn" title="Close" type="button">×</button>
+    </div>
+    <div class="order-failed">
+      <span>Error order sending</span>
+      <button class="close-btn" title="Close" type="button">×</button>
+    </div>
+  </div>
+
+  <h1>Test hosting web-site</h1>
+
+  <section>
+
+    <form action="/mail.php" method="post">
+      <h2>Test form with post request</h2>
+
+      <label for="name">Your name</label>
+      <input type="text" name="name" id="name">
+
+      <label for="phone">Your phone</label>
+      <input type="text" name="phone" id="phone">
+
+      <h3>Test checkboxes</h3>
+      <label for="testCheckbox">Checkbox-1: </label>
+      <input type="checkbox" name="testCheckBox-1" id="testCheckBox-1">
+      <br>
+
+      <label for="testCheckbox">Checkbox-2: </label>
+      <input type="checkbox" name="testCheckBox-2" id="testCheckBox-2">
+      <br>
+
+      <label for="testCheckbox">Checkbox-3: </label>
+      <input type="checkbox" name="testCheckBox-3" id="testCheckBox-3">
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </section>
+
+  <section>
+
+    <div class="img-wrapper active"><img src="img/fox-1.jpg" alt="fox image"></div>
+    <div class="img-wrapper"><img src="img/panda-1.jpg" alt="panda image"></div>
+
+  </section>
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>

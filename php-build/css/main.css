@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #565d7b;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  max-width: 1200px;
+  min-width: 320px;
+  position: relative;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+h1, h2, h3, h4, span, label, div {
+  color: white;
+  font-family: sans-serif;
+}
+
+button {
+  border: none;
+  height: 25px;
+  width: 25px;
+  background-color: #b56819;
+}
+
+button:hover {
+  background-color: #d08940;
+}
+
+form {
+  max-width: 560px;
+  margin: 50px auto;
+  background-color: #3a3c44;
+  padding: 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+form label, form input:not([type=checkbox]), form button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 5px;
+}
+
+form input[type=text], form button {
+  height: 40px;
+  background-color: #505569;
+  border: none;
+  color: white;
+  font-size: 1.1em;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+form label {
+  margin-top: 25px;
+}
+
+form label[for=testCheckbox] {
+  display: inline;
+}
+
+form button {
+  height: 35px;
+  margin-top: 25px;
+  background-color: #b56819;
+}
+
+form button:hover {
+  background-color: #d08940;
+}
+
+.img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.img-wrapper.active {
+  opacity: 1;
+}
+
+.modal, .bg-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.modal {
+  display: none;
+}
+
+.modal.active {
+  display: block !important;
+}
+
+.modal .bg-modal {
+  background-color: black;
+  opacity: .5;
+}
+
+.modal .order-accepted, .modal .order-failed {
+  display: none;
+  position: absolute;
+  z-index: 1001;
+  max-width: 560px;
+  width: 100%;
+  text-align: center;
+  margin: 50px auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #3a3c44;
+}
+
+.modal .order-accepted button, .modal .order-failed button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 25px;
+  font-size: 32px;
+}
+
+.modal .order-accepted button:focus, .modal .order-failed button:focus {
+  outline: none;
+}
+
+.modal .order-accepted.active, .modal .order-failed.active {
+  display: block;
+}
